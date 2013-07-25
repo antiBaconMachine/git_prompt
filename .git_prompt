@@ -68,7 +68,8 @@ PROMPT_COMMAND=set_svn_branch
 # this prompt is a green username, black @ symbol, cyan host, magenta current working directory and white git branch (only shows if you're in a git branch)
 # unstaged and untracked symbols are shown, too (see above)
 # this prompt uses the short colour codes defined above
-PS1='${CYAN}\u@\h:${MAGENTA}\w${BRIGHT}${WHITE}`__git_ps1 " (%s)"` ${SVN_BRANCH}${NORMAL}\$ '
+#PS1='${CYAN}\u@\h:${MAGENTA}\w${BRIGHT}${WHITE}`__git_ps1 " (%s)"` ${SVN_BRANCH}${NORMAL}\$ '
+PS1='${CYAN}\u:${MAGENTA}\w${BRIGHT}${WHITE}`__git_ps1 " (%s)"` ${SVN_BRANCH}${NORMAL}\$ '
 
 # this is a cyan username, @ symbol and host, magenta current working directory and white git branch
 # it uses the shorter , but visibly more complex, codes for text colours (shorter because the colour code definitions aren't needed)
