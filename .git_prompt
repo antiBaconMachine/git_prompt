@@ -69,14 +69,14 @@ PROMPT_COMMAND=set_svn_branch
 # this prompt uses the short colour codes defined above
 
 #prompt with username@host
-PS1='${CYAN}\u${MAGENTA}@${GREEN}\h:${MAGENTA}\w${BRIGHT}${WHITE}`__git_ps1 " (%s)"` ${SVN_BRANCH}\n${NORMAL}\$ '
+PS1='[$(date +"%d/%m %H:%M")] ${CYAN}\u@\h:${MAGENTA}\w${BRIGHT}${WHITE}`__git_ps1 " (%s)"` ${SVN_BRANCH}${NORMAL}\n\$ '
 
 #prompt with username
 #PS1='${CYAN}\u:${MAGENTA}\w${BRIGHT}${WHITE}`__git_ps1 " (%s)"` ${SVN_BRANCH}${NORMAL}\$ '
 
 # this is a cyan username, @ symbol and host, magenta current working directory and white git branch
 # it uses the shorter , but visibly more complex, codes for text colours (shorter because the colour code definitions aren't needed)
-# PS1='\[\033[0;36m\]\u@\h\[\033[01m\]:\[\033[0;35m\]\w\[\033[00m\]\[\033[1;30m\]\[\033[0;37m\]`__git_ps1 " (%s)"`\[\033[00m\]\[\033[0;37m\]\$ '
+# PS1='\[\033[0;36m\]\u@\h\[\033[01m\]:\[\033[0;35m\]\w\[\033[00m\]\[\033[1;30m\]\[\033[0;37m\]`__git_ps1 " (%s)"`\[\033[00m\]${SVN_BRANCH}\[\033[0m\]\n\$ '
 
 # return the prompt prefix for the second line
 function set_prefix {
