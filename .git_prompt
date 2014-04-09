@@ -5,7 +5,8 @@ alias hb='sudo ps -aef | grep HandBrakeCLI'
 alias fc='sudo dscacheutil -flushcache'
 
 # enable the git bash completion commands
-# source ~/.git-completion
+source /usr/local/git/contrib/completion/git-prompt.sh
+source /usr/local/git/contrib/completion/git-completion.bash
 
 # enable git unstaged indicators - set to a non-empty value
 GIT_PS1_SHOWDIRTYSTATE="."
